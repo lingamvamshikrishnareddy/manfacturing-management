@@ -11,7 +11,8 @@ node-modules/
 tests/
 
 # Environment files
-env/
+.env
+.env/
 
 # JWT generator
 generate-jwt.ts
