@@ -1,0 +1,15 @@
+# Build folder
+build/
+
+# Node modules
+node_modules/
+
+# Tests folder
+tests/
+
+# Environment files
+.env
+.env.example
+
+# Package lock
+package-lock.json

@@ -1,0 +1,20 @@
+# Distribution folder
+dist/
+
+# Logs folder
+logs/
+
+# Node modules (singular as specified)
+node-modules/
+
+# Tests folder
+tests/
+
+# Environment files
+env/
+
+# JWT generator
+generate-jwt.ts
+
+# Package lock
+package-lock.json

@@ -1,0 +1,26 @@
+# Shared folder
+shared/
+
+# Mobile folder
+mobile/
+
+# Documentation
+docs/
+
+# Claude AI folder
+.claude/
+
+# Environment example
+.env.example
+
+# Architecture documentation
+architecture.txt
+
+# Script files
+create-mms-structure.ps1
+
+# Package lock
+package-lock.json
+
+# Backend node modules
+backend/node_modules/
