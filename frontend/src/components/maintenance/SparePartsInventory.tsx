@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Package, AlertTriangle, TrendingUp, TrendingDown, Search, Filter, Plus, ArrowUpDown, Box, X } from 'lucide-react';
+import { Package, AlertTriangle, TrendingUp, TrendingDown, Search, Plus, ArrowUpDown, Box, X } from 'lucide-react';
 import { CardSkeleton } from '../ui/Skeleton';
 
 interface SparePart {

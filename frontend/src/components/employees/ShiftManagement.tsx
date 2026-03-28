@@ -1,14 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { 
-  Clock, 
-  Calendar, 
-  Users, 
-  Plus, 
-  Edit2, 
+import {
+  Clock,
+  Calendar,
+  Users,
+  Plus,
+  Edit2,
   Trash2,
-  Play,
   Pause,
-  RotateCcw,
   ChevronLeft,
   ChevronRight,
   Sun,
@@ -16,7 +14,6 @@ import {
   Sunset,
   AlertCircle,
   CheckCircle,
-  X
 } from 'lucide-react';
 import { Card, CardHeader, CardContent } from '../ui/card';
 import { Button } from '../shared/Button';
@@ -32,7 +29,7 @@ const ShiftManagement: React.FC = () => {
   const [showAddShift, setShowAddShift] = useState(false);
   const [showAddSchedule, setShowAddSchedule] = useState(false);
   const [selectedWeek, setSelectedWeek] = useState(new Date());
-  const [selectedShift, setSelectedShift] = useState<Shift | null>(null);
+  const [, setSelectedShift] = useState<Shift | null>(null);
 
   useEffect(() => {
     const fetchData = async () => {

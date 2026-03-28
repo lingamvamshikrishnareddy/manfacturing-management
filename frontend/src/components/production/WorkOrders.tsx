@@ -1,6 +1,6 @@
 // components/production/WorkOrders.tsx
 import React, { useState } from 'react';
-import { Clipboard, Clock, Users, AlertTriangle, Check, Search, Filter, Plus, ArrowRight } from 'lucide-react';
+import { Clipboard, Clock, Users, AlertTriangle, Search, Filter, Plus, ArrowRight } from 'lucide-react';
 import { CardSkeleton } from '../ui/Skeleton';
 
 interface WorkOrder {

@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { User, Mail, Phone, Briefcase, Building2, Plus, Search, ArrowRight } from 'lucide-react';
 import { Employee } from '../../types';
 import { employeeAPI } from '../../services/api/employeeAPI';
-import { CardSkeleton, ProfileCardSkeleton } from '../ui/Skeleton';
+import { CardSkeleton } from '../ui/Skeleton';
 
 const EmployeeDirectory: React.FC = () => {
   const [employees, setEmployees] = useState<Employee[]>([]);

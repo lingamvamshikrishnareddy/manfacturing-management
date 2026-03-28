@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { Button } from '../components/shared/Button';
 import { GoogleLogin } from '@react-oauth/google';
-import axios from '../services/api/config';
 
 const Login: React.FC = () => {
   const [email, setEmail] = useState<string>('');

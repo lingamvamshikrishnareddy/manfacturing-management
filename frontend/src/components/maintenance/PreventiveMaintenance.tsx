@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Card, CardHeader, CardContent } from '../ui/card';
-import { MaintenanceSchedule, Column } from '../../types';
-import { Wrench, Calendar, User, Clock, CheckCircle2, AlertCircle, ArrowRight } from 'lucide-react';
+import { MaintenanceSchedule } from '../../types';
+import { Wrench, Calendar, User, Clock, ArrowRight } from 'lucide-react';
 import Skeleton from '../ui/Skeleton';
 
 const PreventiveMaintenance: React.FC = () => {

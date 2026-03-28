@@ -1,6 +1,6 @@
 // components/inventory/SupplierManagement.tsx
 import React, { useState, useEffect } from 'react';
-import { Building2, Phone, Mail, Star, Plus, Edit2, Trash2, Package, ArrowRight } from 'lucide-react';
+import { Building2, Phone, Mail, Star, Plus, Edit2, Trash2, ArrowRight } from 'lucide-react';
 import { CardSkeleton } from '../ui/Skeleton';
 
 interface Supplier {

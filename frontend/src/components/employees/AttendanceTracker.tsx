@@ -1,25 +1,20 @@
 import React, { useState, useEffect } from 'react';
-import { 
-  Clock, 
-  Users, 
-  CheckCircle, 
-  XCircle, 
+import {
+  Clock,
+  Users,
+  CheckCircle,
+  XCircle,
   AlertTriangle,
-  TrendingUp,
-  Calendar,
-  Filter,
   Download,
   Search
 } from 'lucide-react';
 import { Card, CardHeader, CardContent } from '../ui/card';
-import { Table } from '../shared/Table';
 import { Button } from '../shared/Button';
 import { Calendar as CalendarComponent } from '../shared/Calender';
 import {
   AttendanceRecord,
   AttendanceStats,
   AttendanceView,
-  TableColumn
 } from '../../types/attendance';
 import { employeeAPI } from '../../services/api/employeeAPI';
 
@@ -75,15 +70,6 @@ const AttendanceTracker: React.FC = () => {
 
   const stats = getAttendanceStats();
   const total = stats.present + stats.absent + stats.late + stats.halfDay;
-
-  // Define columns with proper typing
-  const tableColumns: TableColumn[] = [
-    { key: 'employeeName', title: 'Employee' },
-    { key: 'timeIn', title: 'Time In' },
-    { key: 'timeOut', title: 'Time Out' },
-    { key: 'status', title: 'Status' },
-    { key: 'notes', title: 'Notes' }
-  ];
 
   // Filter records for the selected date
   const filteredRecords = records.filter(record =>

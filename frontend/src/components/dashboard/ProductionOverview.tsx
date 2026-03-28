@@ -1,6 +1,6 @@
 // components/dashboard/ProductionOverview.tsx
 import React, { useState, useEffect } from 'react';
-import { Play, Pause, AlertCircle, BarChart3, Clock, Zap, CheckCircle } from 'lucide-react';
+import { Play, Pause, AlertCircle, BarChart3, Clock, Zap } from 'lucide-react';
 import { productionAPI } from '../../services/api/productionAPI';
 import { CardSkeleton } from '../ui/Skeleton';
 

@@ -3,7 +3,7 @@ import { Button } from '../components/shared/Button';
 import axios from '../services/api/config';
 
 const Pricing = () => {
-  const [interval, setInterval] = useState<'monthly' | 'yearly'>('monthly');
+  const [interval, setBillingInterval] = useState<'monthly' | 'yearly'>('monthly');
 
   const plans = [
     {
@@ -91,13 +91,13 @@ const Pricing = () => {
         <div className="mt-8 flex justify-center">
           <div className="relative flex w-64 rounded-full bg-gray-200 p-1">
             <button
-              onClick={() => setInterval('monthly')}
+              onClick={() => setBillingInterval('monthly')}
               className={`relative w-1/2 whitespace-nowrap rounded-full py-2 text-sm font-medium ${interval === 'monthly' ? 'bg-white shadow' : 'text-gray-700'}`}
             >
               Monthly billing
             </button>
             <button
-              onClick={() => setInterval('yearly')}
+              onClick={() => setBillingInterval('yearly')}
               className={`relative w-1/2 whitespace-nowrap rounded-full py-2 text-sm font-medium ${interval === 'yearly' ? 'bg-white shadow' : 'text-gray-700'}`}
             >
               Yearly billing (-20%)

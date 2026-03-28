@@ -1,5 +1,5 @@
 import React from 'react';
-import { Package, Plus, FileText, Clock } from 'lucide-react';
+import { Plus, Clock } from 'lucide-react';
 
 interface MaterialRequest {
   id: string;

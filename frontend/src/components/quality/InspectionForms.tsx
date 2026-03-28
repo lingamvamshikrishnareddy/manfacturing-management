@@ -1,6 +1,6 @@
 // components/quality/InspectionForms.tsx
 import React, { useState } from 'react';
-import { ClipboardCheck, Plus, FileText, CheckCircle, Clock, User, ArrowRight } from 'lucide-react';
+import { ClipboardCheck, Plus, FileText, CheckCircle, Clock, ArrowRight } from 'lucide-react';
 import { CardSkeleton } from '../ui/Skeleton';
 
 interface InspectionForm {

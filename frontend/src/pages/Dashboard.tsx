@@ -5,7 +5,7 @@ import InventoryStatus from '../components/dashboard/InventoryStatus';
 import QualityMetrics from '../components/dashboard/QualityMetrics';
 import MaintenanceSchedule from '../components/dashboard/MaintenanceSchedule';
 import KPIDisplay from '../components/dashboard/KPIDisplay';
-import { Activity, Plus, FileText, TrendingUp, Calendar } from 'lucide-react';
+import { Plus, FileText, TrendingUp, Calendar } from 'lucide-react';
 
 const Dashboard: React.FC = () => {
   const quickActions = [

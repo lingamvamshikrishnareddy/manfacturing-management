@@ -1,7 +1,6 @@
 // components/production/ProductionLine.tsx
 import React, { useState, useEffect } from 'react';
-import { Play, Pause, Settings, Zap, Clock, User, Package, AlertTriangle } from 'lucide-react';
-import { productionAPI } from '../../services/api/productionAPI';
+import { Pause, Settings, Zap, Clock, User, Package, AlertTriangle } from 'lucide-react';
 import { CardSkeleton } from '../ui/Skeleton';
 
 interface ProductionStation {

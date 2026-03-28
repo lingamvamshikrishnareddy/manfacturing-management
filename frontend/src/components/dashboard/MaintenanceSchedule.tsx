@@ -1,6 +1,6 @@
 // components/dashboard/MaintenanceSchedule.tsx
 import React from 'react';
-import { Calendar, Clock, Wrench, AlertTriangle, ArrowRight, CheckCircle, User } from 'lucide-react';
+import { Calendar, Clock, Wrench, ArrowRight, User } from 'lucide-react';
 import { CardSkeleton } from '../ui/Skeleton';
 
 interface MaintenanceTask {

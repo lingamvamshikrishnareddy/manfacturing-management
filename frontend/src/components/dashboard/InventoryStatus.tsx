@@ -31,7 +31,6 @@ const InventoryStatus: React.FC = () => {
   }, []);
 
   const getLowStockItems = () => inventoryItems.filter(item => item.status === 'low');
-  const getOptimalItems = () => inventoryItems.filter(item => item.status === 'optimal');
 
   const getStatusStyles = (status: string) => {
     switch (status) {

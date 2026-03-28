@@ -4,7 +4,7 @@ import QualityChecks from '../components/quality/QualityChecks';
 import DefectTracking from '../components/quality/DefectTracking';
 import InspectionForms from '../components/quality/InspectionForms';
 import QualityReports from '../components/quality/QualityReports';
-import { Plus, Shield, FileText, AlertTriangle, BarChart3 } from 'lucide-react';
+import { Plus, FileText, AlertTriangle, BarChart3 } from 'lucide-react';
 
 const Quality: React.FC = () => {
   const quickActions = [

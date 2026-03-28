@@ -1,6 +1,6 @@
 // components/quality/DefectTracking.tsx
 import React, { useState } from 'react';
-import { AlertTriangle, AlertCircle, CheckCircle, Clock, User, Package, ArrowRight } from 'lucide-react';
+import { AlertTriangle, AlertCircle, CheckCircle, Clock, User, ArrowRight } from 'lucide-react';
 import { CardSkeleton } from '../ui/Skeleton';
 
 interface Defect {
@@ -126,7 +126,6 @@ const DefectTracking: React.FC = () => {
           {defects.map((defect, index) => {
             const severityStyles = getSeverityColor(defect.severity);
             const statusStyles = getStatusColor(defect.status);
-            const StatusIcon = statusStyles.icon;
             const isSelected = selectedDefect?.id === defect.id;
             
             return (

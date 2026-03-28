@@ -1,7 +1,6 @@
 // SkillMatrix.tsx
 import React, { useState } from 'react';
 import { Card, CardHeader, CardContent } from '../ui/card';
-import { Table } from '../shared/Table';
 import { BadgeCheck, Award, TrendingUp, Users } from 'lucide-react';
 
 interface Skill {

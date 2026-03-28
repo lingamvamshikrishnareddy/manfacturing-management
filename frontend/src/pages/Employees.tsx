@@ -4,7 +4,7 @@ import EmployeeDirectory from '../components/employees/EmployeeDirectory';
 import ShiftManagement from '../components/employees/ShiftManagement';
 import SkillMatrix from '../components/employees/SkillMatrix';
 import AttendanceTracker from '../components/employees/AttendanceTracker';
-import { Plus, Users, Calendar, Clock, UserCheck, UserPlus, Award, TrendingUp } from 'lucide-react';
+import { Users, Clock, UserCheck, UserPlus, Award } from 'lucide-react';
 
 const Employees: React.FC = () => {
   const stats = [

@@ -1,6 +1,6 @@
 // components/maintenance/MaintenanceRequests.tsx
 import React, { useState } from 'react';
-import { Wrench, Plus, Search, Filter, AlertTriangle, Clock, User, ArrowRight } from 'lucide-react';
+import { Wrench, Plus, Search, Filter, AlertTriangle, Clock, User } from 'lucide-react';
 import { CardSkeleton } from '../ui/Skeleton';
 
 interface MaintenanceRequest {

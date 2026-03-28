@@ -1,7 +1,7 @@
 // components/dashboard/QualityMetrics.tsx
 import React from 'react';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, AreaChart, Area } from 'recharts';
-import { Shield, TrendingUp, TrendingDown, CheckCircle, XCircle, ClipboardCheck, ArrowRight } from 'lucide-react';
+import { XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, AreaChart, Area } from 'recharts';
+import { Shield, CheckCircle, XCircle, ClipboardCheck, ArrowRight } from 'lucide-react';
 import { ChartSkeleton } from '../ui/Skeleton';
 
 interface QualityData {
@@ -32,13 +32,6 @@ const QualityMetrics: React.FC = () => {
       setLoading(false);
     }, 800);
   }, [selectedPeriod]);
-
-  const calculateTrend = (data: number[]) => {
-    if (data.length < 2) return 0;
-    const start = data[0];
-    const end = data[data.length - 1];
-    return ((end - start) / start) * 100;
-  };
 
   const avgPassRate = metrics.length > 0 
     ? (metrics.reduce((acc, curr) => acc + curr.passRate, 0) / metrics.length).toFixed(1)

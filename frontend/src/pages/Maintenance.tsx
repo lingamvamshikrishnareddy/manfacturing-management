@@ -4,7 +4,7 @@ import MaintenanceRequests from '../components/maintenance/MaintenanceRequests';
 import PreventiveMaintenance from '../components/maintenance/PreventiveMaintenance';
 import EquipmentHistory from '../components/maintenance/EquipmentHistory';
 import SparePartsInventory from '../components/maintenance/SparePartsInventory';
-import { Plus, Wrench, BarChart3, Calendar, AlertTriangle } from 'lucide-react';
+import { Plus, Wrench, BarChart3, Calendar } from 'lucide-react';
 
 const Maintenance: React.FC = () => {
   const quickActions = [
