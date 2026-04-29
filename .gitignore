@@ -24,3 +24,4 @@ package-lock.json
 
 # Backend node modules
 backend/node_modules/
+.env

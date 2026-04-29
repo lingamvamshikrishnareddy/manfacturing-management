@@ -16,6 +16,24 @@ import Profile from './pages/Profile';
 import Subscription from './pages/Subscription';
 import InvoiceHistory from './pages/InvoiceHistory';
 
+// Sub-page imports — these render inside the same MainLayout via Outlet
+import AnalyticsPage from './pages/sub/AnalyticsPage';
+import ProductionSchedulePage from './pages/sub/ProductionSchedulePage';
+import WorkOrdersPage from './pages/sub/WorkOrdersPage';
+import BatchesPage from './pages/sub/BatchesPage';
+import StockPage from './pages/sub/StockPage';
+import SuppliersPage from './pages/sub/SuppliersPage';
+import MaterialRequestsPage from './pages/sub/MaterialRequestsPage';
+import InspectionsPage from './pages/sub/InspectionsPage';
+import DefectsPage from './pages/sub/DefectsPage';
+import QualityReportsPage from './pages/sub/QualityReportsPage';
+import MaintenanceRequestsPage from './pages/sub/MaintenanceRequestsPage';
+import MaintenanceSchedulePage from './pages/sub/MaintenanceSchedulePage';
+import EquipmentPage from './pages/sub/EquipmentPage';
+import ShiftsPage from './pages/sub/ShiftsPage';
+import AttendancePage from './pages/sub/AttendancePage';
+import SkillsPage from './pages/sub/SkillsPage';
+
 // Protected Layout Wrapper that checks authentication
 const ProtectedLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const { user, loading } = useAuth();
@@ -56,13 +74,42 @@ const App: React.FC = () => {
             </ProtectedLayout>
           }
         >
+          {/* Dashboard */}
           <Route index element={<Dashboard />} />
-          <Route path="dashboard" element={<Navigate to="/" replace />} />
-          <Route path="inventory" element={<Inventory />} />
+          <Route path="dashboard" element={<Dashboard />} />
+          <Route path="dashboard/analytics" element={<AnalyticsPage />} />
+
+          {/* Production */}
           <Route path="production" element={<Production />} />
+          <Route path="production/schedule" element={<ProductionSchedulePage />} />
+          <Route path="production/work-orders" element={<WorkOrdersPage />} />
+          <Route path="production/batches" element={<BatchesPage />} />
+
+          {/* Inventory */}
+          <Route path="inventory" element={<Inventory />} />
+          <Route path="inventory/stock" element={<StockPage />} />
+          <Route path="inventory/suppliers" element={<SuppliersPage />} />
+          <Route path="inventory/requests" element={<MaterialRequestsPage />} />
+
+          {/* Quality */}
           <Route path="quality" element={<Quality />} />
+          <Route path="quality/inspections" element={<InspectionsPage />} />
+          <Route path="quality/defects" element={<DefectsPage />} />
+          <Route path="quality/reports" element={<QualityReportsPage />} />
+
+          {/* Maintenance */}
           <Route path="maintenance" element={<Maintenance />} />
+          <Route path="maintenance/requests" element={<MaintenanceRequestsPage />} />
+          <Route path="maintenance/schedule" element={<MaintenanceSchedulePage />} />
+          <Route path="maintenance/equipment" element={<EquipmentPage />} />
+
+          {/* Employees */}
           <Route path="employees" element={<Employees />} />
+          <Route path="employees/shifts" element={<ShiftsPage />} />
+          <Route path="employees/attendance" element={<AttendancePage />} />
+          <Route path="employees/skills" element={<SkillsPage />} />
+
+          {/* Other */}
           <Route path="subscription" element={<Subscription />} />
           <Route path="invoices" element={<InvoiceHistory />} />
           <Route path="profile" element={<Profile />} />
