@@ -1,5 +1,5 @@
 # manfacturing-management
-# Manufacturing Industry Management App  
+# Manufacturing Industry Management web App  
 
 ## Overview  
 The **Manufacturing Industry Management App** is a comprehensive solution designed to streamline operations within manufacturing environments. This app offers features such as inventory management, supply chain tracking, production planning, quality control, and employee management. By integrating IoT and machine learning capabilities, it ensures efficient monitoring and predictive maintenance.  
